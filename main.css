@@ -16,21 +16,25 @@ html, body {
 /* Top Container */
 .top-container {
   position: absolute;
+  display: block;
   top: 0;
   width: 100%;
-  height: 30%;  
+  height: 32%;  
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.logo-container {
+  position: relative;
+  display: block;
+  top: 12px;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .top-logo {
   width: 200px;
   margin: auto;
-  margin-top: 12px;
   margin-bottom: 0px;
-  align-self: flex-start;
 }
 
 .icon-container {
@@ -52,11 +56,20 @@ html, body {
   cursor: pointer;
 }
 
+/* Navigations Bar */
+.nav-bar {
+  position: relative;
+  display: block;
+  top: 10px;
+  position: -webkit-sticky;
+}
+
 .nav-container {
-  width: 80%;
+  width: 84%;
   height: 20%;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 .nav-item{
@@ -77,4 +90,73 @@ html, body {
 hr {
   border: 1px solid #000;
   width: 80vw;
+}
+
+.divider {
+  display: none;
+}
+
+/* Responsive Navigation */
+.nav-collapse {
+  display: none;
+}
+
+/* Main Container */
+.main-container {
+  position: absolute;
+  top: 40%;
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 750px) {
+  .nav-bar {
+    display:none;
+  }
+
+  .logo-container {
+    width: 140px;
+  }
+
+  .top-logo {
+    width: 140px;
+  }
+
+  .icon-container {
+    top: 70px;
+    right: 12px;
+  }
+
+  .nav-collapse {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 12px;
+  }
+
+  .divider {
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo-container {
+    width: 80px;
+  }
+
+  .top-logo {
+    width: 80px;
+  }
+
+  .icon-container {
+    top: 28px;
+    right: 12px;
+  }
+
+  .nav-collapse {
+    top: 28px;
+    left: 12px;
+  }
+
 }
