@@ -2,71 +2,49 @@
 <html lang="en">
 <head>
 
-  <title>Koi Corner</title>
-  <link rel="icon" type="image/x-icon" href="documents/nnb_icon.png">
+  <title>Dessert Co</title>
+  <link rel="icon" type="image/x-icon" href="documents/favicon.ico">
 
   <meta charset="UTF-8">
   <meta name="author" content="Viet Doan">
-  <meta name="description" content="Koi Corner Bubble Tea">
+  <meta name="description" content="Dessert Co">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="main.css">
   
 </head>
 
 <body>
 
-  <!-- Dropdown Menu -->
-  <nav class="mobile-menu navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <!-- Brand -->
-      <a class="navbar-brand" href="https://koicorner.art/">Koi Corner</a>
-      <!-- Navbar toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <!-- <span class="menu-icon">[menuW]</span> -->
-      </button>
-      <!-- Navbar collapse -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <!-- Navbar links -->
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="design.html">Design</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-bottom" href="creator.html">Creator</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <div class="main-container">
+  <div class="top-container">
     <!-- Background Image -->
-    <div class="background-image">
-      <!-- <img src="documents/KC_ScreenBBG.png" alt="Background"> -->
-      <img src="https://anai-g08uvvxmakmtcrdkbvja-assets.s3.ap-southeast-2.amazonaws.com/loHdjIEK8NpQCOaGxsHs.png" alt="Background">
+    <img src="documents/LogoT.png" class="top-logo" alt="Logo">
+
+    <!-- Cart and Profile -->
+    <div class="icon-container">
+      <a class="top-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+      </svg></a>
+      <a class="top-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg></a>
     </div>
 
     <!-- Navigation -->
-    <nav class="nav-container-right">
-      <a class="kc-btn-active">Home</a>
-      <a class="kc-btn" href="about.html" target="_self">About</a>
-      <a class="kc-btn" href="design.html" target="_self">Design</a>
-      <a class="kc-btn" href="creator.html" target="_self">Creator</a>
+    <hr>
+    <nav class="nav-container">
+      <a class="nav-item active" target="_self">Home</a>
+      <a class="nav-item kc" target="_self">About</a>
+      <a class="nav-item kc" target="_self">Products</a>
+      <a class="nav-item kc" target="_self">Stores</a>
+      <a class="nav-item kc" target="_self">Events & Catering</a>
+      <a class="nav-item kc" target="_self">Contact Us</a>
     </nav>
-
-    <!-- KOI - CORNER STONE TEXT -->
-    <h1 class="koi-text">Koi</h1>
-    <h1 class="corner-text">Corner</h1>
+    <hr>
   </div>
 
   <!-- Bootstrap JS -->
