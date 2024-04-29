@@ -4,6 +4,11 @@
   font-family: "Monserrat", sans-serif;
 }
 
+*::selection{
+  background-color: #bfbebe;
+  opacity: 1 !important; 
+}
+
 html, body {
   margin: 0;
 }
