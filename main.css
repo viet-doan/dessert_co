@@ -24,7 +24,12 @@ body {
   flex-direction: column;
   width: 100%;
   margin: auto;
-  
+  background: #fff;
+
+  position: sticky;
+  /* top: 0; */
+  z-index: 100;
+  transition: top 0.4s;
 }
 
 .logo-container {
@@ -60,7 +65,7 @@ body {
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
-  margin-left: 12px;
+  /* margin-left: 12px; */
   margin-right: 12px;
   cursor: pointer;
 }
@@ -76,34 +81,27 @@ hr {
 }
 
 /* Responsive Navigation */
-
-.divider {
-  display: none;
-}
-
 .collapse-menu{
   position: absolute;
-  width: 100%;
+  width: 160px;
   height: 100vh;
 }
 .menu_icon_box{
   z-index: 2;
   width: fit-content;
   height: 27px; 
-  margin: 30px;
-  top: calc(14vw - 60px); 
-  left: 1vw;
+  top: calc(14vw - 16px); 
+  left: 1em;
+  padding: 8px;
   position: absolute;
   border-radius: 4px;
   cursor: pointer;
-  transition: #e1e1e1 0.3s ease;
   display: none;
 }
 
 .menu_icon_box:active {
   background-color: #e1e1e1;
 }
-
 
   /* Menu Icons */
   .line1 , .line2 , .line3{
@@ -135,41 +133,50 @@ hr {
   z-index: 1;
   transition: 0.3s;
   opacity: 0;
-  left: -500px;
   pointer-events: none;
 }
 
 .active-side-nav{
   opacity: 1;
-  left: 0px;
   border-right: 1px solid #000;
   pointer-events: fill;
+  
 }
 
 .collapse-nav{
-  padding-top: 160px;
+  width: 160px;
+  padding-top: 28vw;
+  display: flex;
+  flex-direction: column;
 }
-nav ul{
-  margin: 0px 12px;
-  
-}
-nav ul li{
-  list-style: none;
+.collapse-nav .nav-item{
+  position:relative;
   padding: 4px 12px;
-  margin-bottom: 30px;
-  transition: 0.2s;
+  border-radius: 4px;
+  margin: 12px;
 }
-nav ul li:hover{
-  background-color: #c6c6c66f;
-  
-  border-radius: 8px;
+.collapse-nav .active{
+  background-color: #e1e1e1;
 }
-nav ul li a{
-  color: #000;
-  font-size: 28px;
-  /* padding: 10px 30px; */
-  display: block;
+.collapse-nav .nav-item:hover {
+  background-color: #e1e1e1;
   text-decoration: none;
+}
+
+/* EDIT */
+.anim-left {
+  animation: fade-in-left 1s forward;;
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Main Container */
@@ -178,9 +185,19 @@ nav ul li a{
 }
 
 /* Mobile Responsive Design */
+@media screen and (min-width: 750px) {
+  .collapse-menu {
+    display:none;
+  }
+}
 @media screen and (max-width: 750px) {
   .nav-bar {
     display:none;
+  }
+
+  .main-header {
+    border-bottom: 2px solid #000;
+    
   }
 
   .logo-container,
@@ -197,29 +214,8 @@ nav ul li a{
     top: calc(14vw - 12px); 
   }
 
-  .divider {
-    display: block;
-    width: 100%;
-  }
-
   .menu_icon_box{ 
     display: block;
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

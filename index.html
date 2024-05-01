@@ -29,13 +29,11 @@
     
       <div class="side-nav">
         <nav class="collapse-nav">
-          <ul>
-            <li><a class="nav-item active" target="_self">Home</a></li>
-            <li><a class="nav-item" target="_self">About</a></li>
-            <li><a class="nav-item" target="_self">Products</a></li>
-            <li><a class="nav-item" target="_self">Catering & Events</a></li>
-            <li><a class="nav-item" target="_self">Contact Us</a></li>
-          </ul>
+          <a class="nav-item active" target="_self">Home</a>
+          <a class="nav-item" href="about.html" target="_self">About</a>
+          <a class="nav-item" target="_self">Products</a>
+          <a class="nav-item" target="_self">Catering</a>
+          <a class="nav-item" target="_self">Contact Us</a>
         </nav>
       </div>
     </div>
@@ -43,26 +41,29 @@
     <!-- Background Image -->
     <div class="logo-container">
       <img src="documents/LogoT.png" class="top-logo" alt="Logo">
-    </div>
-    
+    </div>    
 
     <!-- Navigation -->
     <nav class="nav-bar">
       <hr>
       <div class="nav-container">
         <a class="nav-item active" target="_self">Home</a>
-        <a class="nav-item" target="_self">About</a>
+        <a class="nav-item" href="about.html" target="_self">About</a>
         <a class="nav-item" target="_self">Products</a>
-        <a class="nav-item" target="_self">Catering & Events</a>
+        <a class="nav-item" target="_self">Catering</a>
         <a class="nav-item" target="_self">Stores</a>
         <a class="nav-item" target="_self">Contact Us</a>
       </div>
       <hr>
     </nav>
   </header>
-  <hr class="divider">
+
+  
 
   <div class="main-container">
+    <img style="width:80vw;" src="assets/store1.jpg">
+    <img style="width:80vw;" src="assets/store2.jpg">
+    <img style="width:80vw;" src="assets/box3.jpg">
     <p>
       Test <br><br><br><br><br><br><br><br><br><br><br>
       Test <br><br><br><br><br><br><br><br><br><br><br>
@@ -90,18 +91,29 @@
       box.classList.toggle("active-side-nav");
     }
   
-    document.onclick = function(e){
-      if (!menu_icon_box.contains(e.target) && !box.contains(e.target)) {
-        menu_icon_box.classList.toggle("active");
-        box.classList.toggle("active");
+    // document.onclick = function(e){
+    //   if (!menu_icon_box.contains(e.target) && !box.contains(e.target)) {
+    //     menu_icon_box.classList.toggle("active");
+    //     box.classList.toggle("active");
+    //   }
+    // }
+  </script>
+
+  <!-- Hide Header on Scroll -->
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".main-header").style.top = "0";
+      } else {
+        document.querySelector(".main-header").style.top = "-400px";
       }
+      prevScrollpos = currentScrollPos;
     }
   </script>
 
 
-
 </body>
-
-
 </html>
 
