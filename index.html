@@ -10,54 +10,57 @@
   <meta name="description" content="Dessert Co">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-  
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="main.css">
-  
 </head>
 
 <body>
 
-  <div class="top-container">
-    <!-- Responsive Nav Bar -->
-    <nav class="nav-collapse">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-justify-left" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
-      </svg>
-    </nav>
+  
+  <header class="main-header">
+    <!-- Collapsable Nav Menu for Responsive Design -->
+    <div class="collapse-menu">
+      <!-- Nav Menu - Icon -->
+      <div class="menu_icon_box">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    
+      <div class="side-nav">
+        <nav class="collapse-nav">
+          <ul>
+            <li><a class="nav-item active" target="_self">Home</a></li>
+            <li><a class="nav-item" target="_self">About</a></li>
+            <li><a class="nav-item" target="_self">Products</a></li>
+            <li><a class="nav-item" target="_self">Catering & Events</a></li>
+            <li><a class="nav-item" target="_self">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
     <!-- Background Image -->
     <div class="logo-container">
       <img src="documents/LogoT.png" class="top-logo" alt="Logo">
     </div>
-
-    <!-- Cart and Profile Icons -->
-    <div class="icon-container">
-      <a class="top-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
-      </svg></a>
-      <a class="top-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-      </svg></a>  
-    </div>
+    
 
     <!-- Navigation -->
     <nav class="nav-bar">
       <hr>
       <div class="nav-container">
         <a class="nav-item active" target="_self">Home</a>
-        <a class="nav-item kc" target="_self">About</a>
-        <a class="nav-item kc" target="_self">Products</a>
-        <a class="nav-item kc" target="_self">Catering & Events</a>
-        <a class="nav-item kc" target="_self">Stores</a>
-        <a class="nav-item kc" target="_self">Contact Us</a>
+        <a class="nav-item" target="_self">About</a>
+        <a class="nav-item" target="_self">Products</a>
+        <a class="nav-item" target="_self">Catering & Events</a>
+        <a class="nav-item" target="_self">Stores</a>
+        <a class="nav-item" target="_self">Contact Us</a>
       </div>
       <hr>
     </nav>
-    <hr class="divider">
-  </div>
+  </header>
+  <hr class="divider">
 
   <div class="main-container">
     <p>
@@ -74,11 +77,31 @@
     </p>
   </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Collapsable Side Nav Bar for Responsive Design -->
+  <script>
+    let menu_icon_box = document.querySelector(".menu_icon_box");
+    let box = document.querySelector(".side-nav");
+  
+  
+    menu_icon_box.onclick = function(){
+      menu_icon_box.classList.toggle("active");
+      box.classList.toggle("active-side-nav");
+    }
+  
+    document.onclick = function(e){
+      if (!menu_icon_box.contains(e.target) && !box.contains(e.target)) {
+        menu_icon_box.classList.toggle("active");
+        box.classList.toggle("active");
+      }
+    }
+  </script>
 
 
 
 </body>
+
+
 </html>
 
