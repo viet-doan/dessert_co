@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Dessert Co</title>
+  <link rel="icon" type="image/x-icon" href="documents/favicon_light.ico">
+
+  <meta charset="UTF-8">
+  <meta name="author" content="Viet Doan">
+  <meta name="description" content="Dessert Co">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+
+  
+  <header class="main-header">
+    <!-- Collapsable Nav Menu for Responsive Design -->
+    <div class="collapse-menu">
+      <!-- Nav Menu - Icon -->
+      <div class="menu_icon_box">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    
+      <div class="side-nav">
+        <nav class="collapse-nav">
+          <a class="nav-item" href="index.html" target="_self">Home</a>
+          <a class="nav-item active" target="_self">About</a>
+          <a class="nav-item" target="_self">Products</a>
+          <a class="nav-item" target="_self">Catering</a>
+          <a class="nav-item" target="_self">Contact Us</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Background Image -->
+    <div class="logo-container">
+      <img src="documents/LogoT.png" class="top-logo" alt="Logo">
+    </div>
+    
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+      <hr>
+      <div class="nav-container">
+        <a class="nav-item" href="index.html" target="_self">Home</a>
+        <a class="nav-item active" target="_self">About</a>
+        <a class="nav-item" target="_self">Products</a>
+        <a class="nav-item" target="_self">Catering</a>
+        <a class="nav-item" target="_self">Stores</a>
+        <a class="nav-item" target="_self">Contact Us</a>
+      </div>
+      <hr>
+    </nav>
+  </header>
+  <hr class="divider">
+
+  <div class="main-container">
+    <p>
+      Test <br><br><br><br><br><br><br><br><br><br><br>
+      Test <br><br><br><br><br><br><br><br><br><br><br>
+      Test <br><br><br><br><br><br><br><br><br><br><br>
+      Test <br><br><br><br><br><br><br><br><br><br><br>
+      Test <br><br><br><br><br><br><br><br><br><br><br>
+      Test <br><br><br><br><br><br><br><br><br><br><br>
+      Test <br><br><br><br><br><br><br><br><br><br><br>
+      Test <br><br><br><br><br><br><br><br><br><br><br>
+      Test <br><br><br><br><br><br><br><br><br><br><br>
+      Test <br><br><br><br><br><br><br><br><br><br><br>
+    </p>
+  </div>
+
+
+
+  <!-- Collapsable Side Nav Bar for Responsive Design -->
+  <script>
+    let menu_icon_box = document.querySelector(".menu_icon_box");
+    let box = document.querySelector(".side-nav");
+  
+  
+    menu_icon_box.onclick = function(){
+      menu_icon_box.classList.toggle("active");
+      box.classList.toggle("active-side-nav");
+    }
+  
+    // document.onclick = function(e){
+    //   if (!menu_icon_box.contains(e.target) && !box.contains(e.target)) {
+    //     menu_icon_box.classList.toggle("active");
+    //     box.classList.toggle("active");
+    //   }
+    // }
+  </script>
+
+
+
+</body>
+</html>
