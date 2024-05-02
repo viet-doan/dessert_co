@@ -58,6 +58,7 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
+  transition: left 0.4s !important;
 }
 
 .nav-item{
@@ -113,15 +114,18 @@ hr {
     border-radius: 50px;
     transition: 0.2s;
   }
-
+  .line3{
+    width: 20px;
+  }
   .active .line1{
-    transform: translate(0px , 9px)rotate(45deg);
+    transform: translate(0px , 9px) rotate(45deg);
   }
   .active .line2{
     opacity: 0;
   }
   .active .line3{
-    transform: translate(0px , -9px)rotate(-45deg);
+    width: 30px;
+    transform: translate(0px , -9px) rotate(-45deg);
   }
 
 .side-nav{
@@ -193,11 +197,6 @@ hr {
 @media screen and (max-width: 750px) {
   .nav-bar {
     display:none;
-  }
-
-  .main-header {
-    border-bottom: 2px solid #000;
-    
   }
 
   .logo-container,

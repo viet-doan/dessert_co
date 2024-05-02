@@ -15,8 +15,6 @@
 </head>
 
 <body>
-
-  
   <header class="main-header">
     <!-- Collapsable Nav Menu for Responsive Design -->
     <div class="collapse-menu">
@@ -37,12 +35,13 @@
         </nav>
       </div>
     </div>
-
+  
     <!-- Background Image -->
     <div class="logo-container">
-      <img src="documents/LogoT.png" class="top-logo" alt="Logo">
+      <img src="https://anai-9atmfta1xwyli1hklmwd-assets.s3.ap-southeast-2.amazonaws.com/Zqng9V2O3X5OXheDGOpL.png" class="top-logo" alt="Logo">
+      <!-- <img src="[LogoT]" class="top-logo" alt="Logo"> -->
     </div>    
-
+  
     <!-- Navigation -->
     <nav class="nav-bar">
       <hr>
@@ -57,48 +56,32 @@
       <hr>
     </nav>
   </header>
-
   
-
+  
+  
   <div class="main-container">
-    <img style="width:80vw;" src="assets/store1.jpg">
-    <img style="width:80vw;" src="assets/store2.jpg">
-    <img style="width:80vw;" src="assets/box3.jpg">
-    <p>
-      Test <br><br><br><br><br><br><br><br><br><br><br>
-      Test <br><br><br><br><br><br><br><br><br><br><br>
-      Test <br><br><br><br><br><br><br><br><br><br><br>
-      Test <br><br><br><br><br><br><br><br><br><br><br>
-      Test <br><br><br><br><br><br><br><br><br><br><br>
-      Test <br><br><br><br><br><br><br><br><br><br><br>
-      Test <br><br><br><br><br><br><br><br><br><br><br>
-      Test <br><br><br><br><br><br><br><br><br><br><br>
-      Test <br><br><br><br><br><br><br><br><br><br><br>
-      Test <br><br><br><br><br><br><br><br><br><br><br>
-    </p>
+    <img style="width:80vw;" src="https://anai-9atmfta1xwyli1hklmwd-assets.s3.ap-southeast-2.amazonaws.com/IJU5umK9uNrxA1acjeUk.jpg">
+    <img style="width:80vw;" src="https://anai-9atmfta1xwyli1hklmwd-assets.s3.ap-southeast-2.amazonaws.com/InNOmsnXh0fS4atJZcyy.jpg">
+    <img style="width:80vw;" src="https://anai-9atmfta1xwyli1hklmwd-assets.s3.ap-southeast-2.amazonaws.com/hy2LV7EtMg8IjEKWGqY9.jpg">
+    <img style="width:80vw;" src="[store1]">
+    <img style="width:80vw;" src="[store2]">
+    <img style="width:80vw;" src="[store3]">
   </div>
-
-
-
+  
+  
+  
   <!-- Collapsable Side Nav Bar for Responsive Design -->
   <script>
     let menu_icon_box = document.querySelector(".menu_icon_box");
     let box = document.querySelector(".side-nav");
   
   
-    menu_icon_box.onclick = function(){
+      menu_icon_box.onclick = function(){
       menu_icon_box.classList.toggle("active");
       box.classList.toggle("active-side-nav");
     }
-  
-    // document.onclick = function(e){
-    //   if (!menu_icon_box.contains(e.target) && !box.contains(e.target)) {
-    //     menu_icon_box.classList.toggle("active");
-    //     box.classList.toggle("active");
-    //   }
-    // }
   </script>
-
+  
   <!-- Hide Header on Scroll -->
   <script>
     var prevScrollpos = window.pageYOffset;
@@ -107,13 +90,13 @@
       if (prevScrollpos > currentScrollPos) {
         document.querySelector(".main-header").style.top = "0";
       } else {
-        document.querySelector(".main-header").style.top = "-400px";
+        document.querySelector(".main-header").style.top = "-100vh";
+        menu_icon_box.classList.remove("active");
+        box.classList.remove("active-side-nav");
       }
       prevScrollpos = currentScrollPos;
     }
   </script>
-
-
 </body>
 </html>
 
