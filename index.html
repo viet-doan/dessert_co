@@ -133,8 +133,8 @@
   
   
       menu_icon_box.onclick = function(){
-      menu_icon_box.classList.toggle("active");
-      box.classList.toggle("active-side-nav");
+        menu_icon_box.classList.toggle("active");
+        box.classList.toggle("active-side-nav");
     }
   </script>
   
@@ -148,9 +148,9 @@
         // menu_icon_box.classList.toggle("active");
         // box.classList.toggle("active-side-nav");
       } else {
-        document.querySelector(".main-header").style.top = "-100vh";
-        menu_icon_box.classList.remove("active");
-        box.classList.remove("active-side-nav");
+        document.querySelector(".main-header").style.top = "-400px"; 
+        // menu_icon_box.classList.remove("active");
+        // box.classList.remove("active-side-nav");
       }
       prevScrollpos = currentScrollPos;
     }

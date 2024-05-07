@@ -29,7 +29,6 @@ body {
   margin: auto;
   background: #fff;
 
-  position: relative;
   position: sticky;
   z-index: 100;
   transition: top 0.4s;
@@ -61,7 +60,6 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
-  transition: left 0.4s !important;
 }
 
 .nav-item{
@@ -237,6 +235,56 @@ body {
   background-color: rgb(80, 180, 220);
 }
 
+.about, .product{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: auto;
+  text-align: left;
+  align-items:  center;
+  margin-bottom: 1em;
+}
+
+.about p, h1, h3 {
+  margin-left: 0;
+  margin-right: 0; 
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.product {
+  width: 80vw;
+}
+
+.product p, h1, h3 {
+  margin-left: 0;
+  margin-right: 0; 
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  align-content: space-around;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  width: 18vw;
+}
+
+.menu-item p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
 /* Footer */
 footer {
   margin-top: 1em;
@@ -360,6 +408,13 @@ footer h6 {
     display:none;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .about {
+    width: 70vw;
+  }
+}
+
 @media screen and (max-width: 750px) {
   /* Header */
   .nav-bar {
@@ -386,6 +441,10 @@ footer h6 {
   }
 
   /* Main */
+  .about {
+    width: 80vw;
+  }
+
   .wrapper {
     display: flex;
     flex-direction: column-reverse;
@@ -402,6 +461,11 @@ footer h6 {
   .store-img {
     width: 100%;
   }
+
+  .menu-item {
+    width: 32vw;
+  }
+
   /* Footer */
   .line-spacer {
     display: none;
