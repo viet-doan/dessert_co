@@ -60,16 +60,33 @@
   
   <div class="main-container">
     <div class="general-slideshow"> <!-- CLASS ADD -->
-      <img style="width:80vw;" src="assets/general1.jpg">
+      <img class="main-img" src="assets/general1.jpg" alt="Desserts">
     </div>
 
     <div class="general-desc">
-      <p><strong>Dessert Co</strong></p>
-      <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-      <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-      <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+      <p><strong>Dessert Co</strong> is a sweet haven offering a variety of treats to satisfy any sweet tooth. This charming store crafts each creation from scratch using fine ingredients. From classic cupcakes to delicate French macarons and decadent cake slices, Dessert Co has something for everyone, perfect for special occasions or a sweet pick-me-up.</p>
+    </div>
 
-      </p>
+    <div class="wrapper">
+      <div class="split-container">
+        <p>Find more about our locations and open hours from the button below.</p>
+        <button class="store-btn" onclick="goToStore()">Our Stores</button>
+      </div>
+
+      <div class="split-container">
+        <img class="store-img" src="assets/store1.jpg" alt="Store">
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="split-container">
+        <p>Find more about our varieties of products from the button below.</p>
+        <button class="store-btn" onclick="goToProduct()">Our Products</button>
+      </div>
+
+      <div class="split-container">
+        <img class="store-img" src="assets/dessert3.jpg" alt="Pancake">
+      </div>
     </div>
 
   </div>
@@ -105,7 +122,7 @@
     
     <div class="copyright"> 
       <hr class="footer-divider">
-      <p>Copyright 2023 © Viet Doan</p>
+      <p>Copyright 2024 © Viet Doan</p>
     </div>
   </footer>
   
@@ -128,14 +145,27 @@
     var currentScrollPos = window.pageYOffset;
       if (prevScrollpos > currentScrollPos) {
         document.querySelector(".main-header").style.top = "0";
-        menu_icon_box.classList.remove("active");
-        box.classList.remove("active-side-nav");
+        // menu_icon_box.classList.toggle("active");
+        // box.classList.toggle("active-side-nav");
       } else {
         document.querySelector(".main-header").style.top = "-100vh";
         menu_icon_box.classList.remove("active");
         box.classList.remove("active-side-nav");
       }
       prevScrollpos = currentScrollPos;
+    }
+  </script>
+
+  <!-- Buttons to Redirect Page -->
+  <script>
+    function goToStore() {
+      window.location.href = "store.html";
+    }
+  </script>
+
+  <script>
+    function goToProduct() {
+      window.location.href = "store.html";
     }
   </script>
 </body>
