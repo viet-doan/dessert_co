@@ -244,18 +244,20 @@ body {
 }
 
 .store-btn {
-  color: #fff;
+  color: #a1a1a1;
   font-size: 16px;
-  background-color: rgb(100, 200, 240);
+  background-color: #fff;
   padding: 16px 24px;
   border-radius: 16px;
-  border: none;
+  border: solid 1px #a1a1a1;
   cursor: pointer;
   margin-top: 1em;
 }
 
 .store-btn:hover {
-  background-color: rgb(80, 180, 220);
+  color: #1a1a1a;
+  background-color: #a1a1a1;
+  border: solid 1px #1a1a1a;
 }
 
 .about, .product{
@@ -429,7 +431,7 @@ footer h6 {
   margin-top: 1em;
   margin-bottom: 0;
   width: 80%;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .social-icons {
@@ -439,6 +441,10 @@ footer h6 {
   text-align: left;
   width: 80%;
   font-size: 20px;
+}
+
+.social-icons svg{
+  margin-right: 1em;
 }
 
 .anim-left {
@@ -477,6 +483,52 @@ footer h6 {
   align-items: center;
   justify-content: center;
 }
+
+/* Contact Form */
+.container {
+  margin: 1em;
+  margin-bottom: 0;
+  width: 50vw;
+}
+
+.form-label {
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn {
+  display: flex;
+  width: 50vw;
+  align-self: center;
+  justify-content: center;
+  color: #a1a1a1;
+  font-size: 16px;
+  background-color: #fff;
+  padding: 16px 24px;
+  border-radius: 16px;
+  border: solid 1px #a1a1a1;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.btn:hover {
+  color: #1a1a1a;
+  background-color: #a1a1a1;
+  border: solid 1px #1a1a1a;
+}
+
 
 /* Mobile Responsive Design */
 @media screen and (min-width: 750px) {
@@ -574,6 +626,11 @@ footer h6 {
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
+  }
+
+  .logo-text-container {
+    text-align: center;
+    width: 80%;
   }
 
   .logo-text{

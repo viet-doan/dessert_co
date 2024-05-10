@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="contact.css">
 </head>
 
 <body>
@@ -64,15 +64,28 @@
       <p>Get in touch with us at Dessert Co! Whether you have a question about our products, would like to place a custom order, or simply want to share your sweet experience with us, we'd love to hear from you. You can reach us by phone at 0123 444 8888, or by email at info@dessertco.com.au. Alternatively, you can fill out the form below and we'll get back to you within 24 hours. We're also active on social media, so feel free to reach out to us on Facebook, Instagram, or Twitter. We can't wait to connect with you and satisfy your sweet tooth!</p>
     </div>
 
-    <form id="contactForm">
-      <label>Name</label>
-      <input type="text" id="name">
-      <label>Email</label>
-      <input type="email" id="email">
-      <label>Message</label>
-      <textarea id="message"></textarea>
-      <button class="submit-btn" type="submit">Submit</button>
-    </form>
+    <!-- Contact Form -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label"><h3>Name<h3></label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"><h3>Email<h3></label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label"><h3>Message<h3></label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer>
