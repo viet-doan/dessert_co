@@ -39,7 +39,7 @@ body {
   position: relative;
   width: 200px;
   margin: 0 auto;
-  margin-top: 12px;
+  margin-top: 1em;
 }
 
 .top-logo {
@@ -68,8 +68,8 @@ body {
   color: #1a1a1a;
   font-size: 20px;
   text-decoration: none;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 1em;
+  margin-right: 1em;
   cursor: pointer;
 }
 
@@ -78,10 +78,14 @@ body {
   text-underline-offset: 2px;
 }
 
-.nav-divider {
+.nav-divider, .nav-divider2 {
   border: 1px solid #000;
   width: 80vw;
   opacity: 0.4;
+}
+
+.nav-divider2{
+  margin-bottom: 0;
 }
 
 /* Responsive Navigation */
@@ -158,9 +162,9 @@ body {
 }
 .collapse-nav .nav-item{
   position:relative;
-  padding: 4px 12px;
+  padding: 4px 1em;
   border-radius: 4px;
-  margin: 12px;
+  margin: 1em;
 }
 .collapse-nav .active{
   background-color: #e1e1e1;
@@ -171,34 +175,45 @@ body {
 }
 
 /* Main Body */
+.general-slideshow {
+  margin-top: 1em;
+}
+
 .main-img {
   width: 80vw;
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
 .main-container {
   color: #444;
-  text-align: center;
   letter-spacing: 0.06rem;
   font-family: serif;
-  padding-bottom: 1em;
 }
 
 .main-container p {
   margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  width: 80%;
+  margin-top: 1;
+  margin-bottom: 0;
+  /* width: 80%; */
+}
+
+.general-desc {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.center {
+  text-align: center;
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
   margin: auto;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 0;
   width: 70vw;
 }
 
@@ -206,8 +221,8 @@ body {
   display: flex;
   flex-direction: row;
   margin: auto;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 0;
   width: 80vw;
 }
 
@@ -220,7 +235,8 @@ body {
 }
 
 .split-container p {
-  margin: 1em;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 .store-img {
@@ -235,6 +251,7 @@ body {
   border-radius: 16px;
   border: none;
   cursor: pointer;
+  margin-top: 1em;
 }
 
 .store-btn:hover {
@@ -244,18 +261,18 @@ body {
 .about, .product{
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 80vw;
   margin: auto;
   text-align: left;
   align-items:  center;
-  margin-bottom: 1em;
+  margin-bottom: 0;
 }
 
 .about p, h1, h3 {
   margin-left: 0;
   margin-right: 0; 
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 1em;
+  margin-bottom: 0 !important;
 }
 
 .product {
@@ -265,8 +282,8 @@ body {
 .product p, h1, h3 {
   margin-left: 0;
   margin-right: 0; 
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 .menu-grid {
@@ -277,7 +294,7 @@ body {
   justify-content: center;
   gap: 2vw;
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0;
 }
 
 .menu-item {
@@ -287,26 +304,30 @@ body {
 }
 
 .menu-item p {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.promotional {
+  margin-top: 1em !important;
 }
 
 .store-location p {
-  margin-top: 0;
-  margin-bottom: 12px;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 .store-location h2 {
   text-decoration: underline;
-  margin-top: 2em;
-  margin-bottom: 12px;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 /* Footer */
 footer {
-  margin-top: 1em;
   background: #d4d4d4;
   display: flex;
+  margin-top: 1em;
   flex-direction: column;
   align-items: center;
   height: auto;
@@ -314,11 +335,11 @@ footer {
 
 .footer-main {
   display: flex;
-  height: 10em;
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
+  margin-top: 1em;
 }
 
 .footer-divider {
@@ -333,8 +354,8 @@ footer {
   display: flex;
   height: 10%;
   width: 100vw;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 1em;
+  margin-bottom: 1em;
   justify-content: center;
 
   color: #444;
@@ -354,25 +375,31 @@ footer {
   flex-direction: column;
   width: 100vw;
   height: auto;
-  /* bottom: 4px; */
+  margin-top: 1em;
   margin-bottom: 0;
   align-items: center;
   justify-content: center;
 
   color: #444;
-  font-size: 12px;
+  font-size: 1em;
   font-weight: 100;
 }
 
 .line-spacer {
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.logo-text-container {
+  text-align: right;
+  display: flex;
+  margin: auto;
+  width: 50%;
 }
 
 .logo-text {
-  text-align: center;
-  width: 50%;
-
+  margin: auto;
+  width: 80%;
   color: #444;
   font-size: 45px;
   font-family: "Aboreto";
@@ -380,8 +407,11 @@ footer {
 }
 
 .slogan {
-  text-align: center;
+  text-align: left;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 
   color: #444;
   font-size: 45px;
@@ -389,13 +419,30 @@ footer {
 
 footer h6 {
   padding: 0;
-  margin: 0;
+  margin: auto;
+  margin-bottom: 0;
+  width: 80%;
 }
 
 .slogan p {
   margin: auto;
-  width: 28em;
+  margin-top: 1em;
+  margin-bottom: 0;
+  width: 80%;
   font-size: 14px;
+}
+
+.social-icons {
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 0;
+  text-align: left;
+  width: 80%;
+  font-size: 20px;
+}
+
+.social-icons svg{
+  margin-right: 1em;
 }
 
 .anim-left {
@@ -449,6 +496,10 @@ footer h6 {
 }
 
 @media screen and (max-width: 750px) {
+  h1, h3, h6, p {
+    text-align: center;
+  }
+
   /* Header */
   .nav-bar {
     display:none;
@@ -466,7 +517,7 @@ footer h6 {
 
   .menu-btn {
     display: flex;
-    top: calc(14vw - 12px); 
+    top: calc(14vw - 1em); 
   }
 
   .menu_icon_box{ 
@@ -484,7 +535,7 @@ footer h6 {
     flex-direction: column-reverse;
     margin: auto;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0 !important;
     width: 80vw;
   }
   
@@ -515,13 +566,25 @@ footer h6 {
 
   .footer-main {
     display: flex;
-    height: 16em;
     width: 100%;
     align-items: center;
     flex-wrap: nowrap;
     align-content: center;
     flex-direction: column;
+    margin-top: 1em;
   }
+
+  .social-icons {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .logo-text-container {
+    text-align: center;
+    width: 80%;
+  }
+
   .logo-text{
     width: 100vw;
     margin: auto;
