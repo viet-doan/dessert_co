@@ -244,18 +244,20 @@ body {
 }
 
 .store-btn {
-  color: #fff;
+  color: #a1a1a1;
   font-size: 16px;
-  background-color: rgb(100, 200, 240);
+  background-color: #fff;
   padding: 16px 24px;
   border-radius: 16px;
-  border: none;
+  border: solid 1px #a1a1a1;
   cursor: pointer;
   margin-top: 1em;
 }
 
 .store-btn:hover {
-  background-color: rgb(80, 180, 220);
+  color: #1a1a1a;
+  background-color: #a1a1a1;
+  border: solid 1px #1a1a1a;
 }
 
 .about, .product{
@@ -429,7 +431,7 @@ footer h6 {
   margin-top: 1em;
   margin-bottom: 0;
   width: 80%;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .social-icons {
