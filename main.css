@@ -549,6 +549,10 @@ textarea {
   }
 
   /* Main */
+  .main-container {
+    margin-top: 1em;
+  }
+
   .wrapper,
   .wrapper2 {
     display: flex;
