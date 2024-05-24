@@ -12,7 +12,10 @@
 
 html, body {
   margin: 0;
-  /* overflow-x: hidden; */
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -71,6 +74,10 @@ body {
   margin-right: 1em;
   cursor: pointer;
 }
+.nav-item-icon{
+  place-self: bottom !important;
+  justify-self: flex-end !important;
+}
 
 .active, .nav-item:hover {
   text-decoration: underline !important;
@@ -79,7 +86,7 @@ body {
 
 .nav-divider, .nav-divider2 {
   border: 1px solid #000;
-  width: 80vw;
+  width: 100vw;
   opacity: 0.4;
 }
 
@@ -90,15 +97,18 @@ body {
 /* Responsive Navigation */
 .collapse-menu{
   position: absolute;
-  width: 160px;
+  /* width: 160px; */
   height: 100vh;
+}
+.minimal-logo {
+  width: 80px;
 }
 .menu_icon_box{
   z-index: 2;
   width: fit-content;
-  height: 27px; 
-  top: calc(14vw - 16px); 
-  left: 1em;
+  height: 20px; 
+  top: 50px;
+  right: 5vw;
   padding: 8px;
   position: absolute;
   border-radius: 4px;
@@ -116,34 +126,21 @@ body {
     height: 3px;
     margin-bottom: 6px;
     background-color: #000;
-    
     border-radius: 50px;
     transition: 0.2s;
   }
-  .line3{
-    width: 20px;
-  }
-  .active .line1{
-    transform: translate(0px , 9px) rotate(45deg);
-  }
-  .active .line2{
-    opacity: 0;
-  }
-  .active .line3{
-    width: 30px;
-    transform: translate(0px , -9px) rotate(-45deg);
-  }
 
 .side-nav{
-  width: fit-content;
-  height: 100vh;
+  width: 100vw;
+  height: 70vh;
   background-color: #fff;
-  position: relative;
-  text-align: left;
+  /* position: relative; */
+  text-align: center;
   z-index: 1;
   transition: 0.3s;
   opacity: 0;
   pointer-events: none;
+
 }
 
 .active-side-nav{
@@ -154,19 +151,23 @@ body {
 }
 
 .collapse-nav{
-  width: 160px;
-  padding-top: 28vw;
+  width: 100vw;
+  padding-top: 40%;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 .collapse-nav .nav-item{
   position:relative;
-  padding: 4px 1em;
+  text-align: center;
+  width: 50%;
+  padding: 0.5em 1em;
   border-radius: 4px;
-  margin: 1em;
+  margin: 0.2em;
 }
 .collapse-nav .active{
   background-color: #e1e1e1;
+
 }
 .collapse-nav .nav-item:hover {
   background-color: #e1e1e1;
@@ -174,17 +175,55 @@ body {
 }
 
 /* Main Body */
-p, h1, h3 {
+p, h2, h4 {
   margin: 0;
+  margin-bottom: 1em;
 }
 
-h1 {
+p {
+  font-size: 20px;
+}
+h5 {
+  font-size: 24px;
+}
+h4 {
+  font-size:28px;
+}
+h3 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 36px;
   margin: auto;
 }
 
+.general-slideshow {
+  position: relative;
+  justify-content: center;
+  width: 100vw;
+  height: 40vw;
+  background-color: #000;
+}
+
+.overlay-slogan{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 28%;
+  z-index: 2;
+
+  text-transform: uppercase;
+  color: white;
+  font-size: 6.8vw;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .main-img {
-  width: 80vw;
+  width: 100%;
+  height: 100%;
   margin-bottom: 0;
+  opacity: 0.6 !important;
 }
 
 .main-container {
@@ -199,7 +238,7 @@ h1 {
 
 .main-container p {
   margin: auto;
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 .general-desc {
@@ -295,7 +334,7 @@ h1 {
 
 .menu-item p {
   margin-top: 1em;
-  margin-bottom: 0;
+
 }
 
 .promotional {
@@ -310,11 +349,11 @@ h1 {
 }
 
 .store-location p,
-.store-location h2{
+.store-location h3{
   margin: 0;
 }
 
-.store-location h2 {
+.store-location h3 {
   margin-top: 1em;
 }
 
@@ -440,6 +479,15 @@ footer h6 {
   margin-right: 1em;
 }
 
+.social-icon {
+  color: #444;
+}
+.social-icon:hover{
+  color: #222;
+  margin: none;
+  padding: none;
+}
+
 .anim-left {
   animation: fade-in-left 1s forwards;
 }
@@ -520,7 +568,7 @@ textarea {
 }
 
 @media screen and (max-width: 750px) {
-  h1, h3, h6, p {
+  h2, h4, h6, p {
     text-align: center;
   }
 
@@ -531,7 +579,7 @@ textarea {
 
   .logo-container,
   .top-logo {
-    width: 28vw;
+    width: 120px;
   }
 
   .main-header{
@@ -541,7 +589,6 @@ textarea {
 
   .menu-btn {
     display: flex;
-    top: calc(14vw - 1em); 
   }
 
   .menu_icon_box{ 
