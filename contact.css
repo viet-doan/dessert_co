@@ -135,7 +135,7 @@ body {
     transform: translate(0px , -9px) rotate(-45deg);
   }
 
-.side-nav{
+.top-nav{
   width: fit-content;
   height: 100vh;
   background-color: #fff;
@@ -147,7 +147,7 @@ body {
   pointer-events: none;
 }
 
-.active-side-nav{
+.active-top-nav{
   opacity: 1;
   border-right: 1px solid #000;
   pointer-events: fill;
@@ -175,7 +175,7 @@ body {
 }
 
 /* Main Body */
-.general-slideshow {
+.hero-cover {
   margin-top: 1em;
 }
 

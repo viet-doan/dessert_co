@@ -1,0 +1,78 @@
+** ID **
+
+** CLASS ***
+
+*SOCIAL ICONS*
+.social-icons
+.social-icon
+
+*BUTTONS*
+.general-btn
+
+*SCROLLBAR*
+#scrollbar::-webkit-scrollbar
+#scrollbar::-webkit-scrollbar-track
+#scrollbar::-webkit-scrollbar-thumb
+
+*LOGO*
+.logo-container
+.top-logo
+
+*HEADER*
+.main-header
+.nav-container
+.nav-bar
+.nav-item
+.nav-item-icons
+.active, .nav-item:hover
+.nav-divider
+.nav-divider2
+
+*Responsive Header
+.collapse-menu
+.collapse-nav
+.menu_icon_box
+.line1
+.line2
+.line3
+.top-nav
+.active
+
+
+*MAIN*
+.main-container
+
+*INDEX*
+.wrapper1
+.wrapper2
+.hero-cover
+.overlay-slogan
+.main-img fade-in
+
+*ABOUT*
+.row
+.column
+.column-item
+.split70
+.split30
+
+
+** FOOTER **
+footer
+.footer-main
+.footer-container
+.footer-container2
+.footer-divider
+.general-contact
+.line-spacer
+
+.copyright
+
+
+** ANIMATIONS **
+.fade-in
+@keyframes fade-in
+
+
+
+

@@ -26,7 +26,7 @@
       </div>
       
       <!-- Side Navigation -->
-      <div class="side-nav">
+      <div class="top-nav">
         <nav class="collapse-nav">
           <a class="nav-item active" href="index.html" target="_self">Home</a>
           <a class="nav-item" href="about.html" target="_self">About</a>
@@ -215,12 +215,12 @@
   <!-- Collapsable Side Nav Bar for Responsive Design -->
   <script>
     let menu_icon_box = document.querySelector(".menu_icon_box");
-    let box = document.querySelector(".side-nav");
+    let box = document.querySelector(".top-nav");
 
 
       menu_icon_box.onclick = function(){
         menu_icon_box.classList.toggle("active");
-        box.classList.toggle("active-side-nav");
+        box.classList.toggle("active-top-nav");
     }
   </script>
 
@@ -234,7 +234,7 @@
       } else {
         document.querySelector(".main-header").style.top = "-400px"; 
         menu_icon_box.classList.remove("active");
-        box.classList.remove("active-side-nav");
+        box.classList.remove("active-top-nav");
       }
       prevScrollpos = currentScrollPos;
     }
