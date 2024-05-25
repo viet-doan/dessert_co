@@ -237,7 +237,7 @@ h1 {font-size: 100px;}
 
 /* index */
 .wrapper1, .wrapper2{
-  width: 100%;
+  width: 100vw;
   margin: 40px 0;
 }
 .wrapper2 {
@@ -298,21 +298,20 @@ h1 {font-size: 100px;}
   align-items: center;
   justify-content: center;
 }
-.split70 {
-  width: 70%;
+.split30, 
+.split50,
+.split70{
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
 }
+.split50 {width: 50%;}
+.split70 {width: 70%;}
 .split30 {
   width: 30%;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+  gap: 0px;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -350,19 +349,28 @@ h1 {font-size: 100px;}
 /* ==================================*/
 /* ====================================== */
 
-
-.store-location {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  gap: 1em;
+/* stores */
+#stores .column{
+  margin-top: 0;
+  gap: 0;
 }
-.store-location p,
-.store-location h3{
-  margin: 0;
+.stores-container1 {
+  background: #D8D8D8;
 }
-.store-location h3 {
-  margin-top: 1em;
+.stores-container2 {
+  background: #E2E2E2;
+}
+.stores-container1,
+.stores-container2 {
+  padding: 40px 0;
+}
+.stores-container1 img,
+.stores-container2 img {
+  width: 80%;
+  overflow: hidden;
+}
+p.open-hours{
+  margin-top: 20px !important;
 }
 
 /* ====================================== */
@@ -533,6 +541,9 @@ textarea {
   /* Main */
   .column {
     flex-direction: column;
+  }
+  .split50 {
+    width: 100%;
   }
   .split70{
     margin-bottom: 0;
