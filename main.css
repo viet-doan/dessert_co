@@ -25,13 +25,16 @@ body {
 }
 
 /* General Texts */
-.center-text {
-  text-align: center;
-}
 p, h6, h5, h4, h3, h2, h1 {
   padding: 0 !important;
   margin: 0 !important;
   color: #444;
+  text-align: center !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Aboreto";
 }
 p {
   font-size: 18px ;
@@ -54,6 +57,7 @@ h2 {
 h1 {
   font-size: 100px;
 }
+
 
 /* Wrappers */
 .wrapper1, .wrapper2{
@@ -151,7 +155,6 @@ img.width30 {
   height: 50px;
   background: none;
   border: solid 2px #444;
-  border-radius: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .general-btn a{
@@ -207,8 +210,7 @@ img.width30 {
   color: #1a1a1a;
   font-size: 20px;
   text-decoration: none;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin: 0 1em;
   cursor: pointer;
 }
 .nav-item-icon{
@@ -247,7 +249,6 @@ img.width30 {
   right: 5vw;
   padding: 8px;
   position: absolute;
-  border-radius: 4px;
   cursor: pointer;
   display: none;
 }
@@ -262,7 +263,6 @@ img.width30 {
     height: 3px;
     margin-bottom: 6px;
     background-color: #000;
-    border-radius: 50px;
     transition: 0.2s;
   }
 
@@ -286,19 +286,21 @@ img.width30 {
 }
 
 .collapse-nav{
+  background: #fff;
   width: 100vw;
-  padding-top: 120px;
+  border-top: 1px solid #000;
+  margin-top: 115px;
+  padding: 20px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 20px;
 }
 .collapse-nav .nav-item{
   position:relative;
   text-align: center;
   width: 50%;
   padding: 0.5em 1em;
-  border-radius: 4px;
-  margin: 0.2em;
 }
 .collapse-nav .active{
   background-color: #e1e1e1;
@@ -507,7 +509,6 @@ footer {
 }
 
 .logo-text {
-  text-align: center;
   margin: auto;
   width: 80%;
   color: #444;
@@ -523,13 +524,9 @@ footer {
   display: flex;
   margin: auto;
   flex-direction: column;
-  align-items: left;
   gap: 20px;
   color: #444;
   font-size: 45px;
-}
-.footer-container2{
-  align-items: center;
 }
 
 footer h6 {
@@ -549,6 +546,7 @@ footer h6 {
 
 .social-icons {
   display: flex;
+  flex-direction: row;
   margin: auto;
   margin-bottom: 0;
   /* width: 80%; */
@@ -734,5 +732,26 @@ textarea {
 
   .slogan p {
     width: 80vw;
+  }
+
+  .split70{
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .split30 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-top: 0;
+  }
+  .split30 img {
+    width: 33%;
+    margin: 0;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
   }
 }
