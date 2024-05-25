@@ -448,14 +448,14 @@ footer h6 {
 }
 
 .anim-left {
-  animation: fade-in-left 1s forwards;
+  animation: -left 1s forwards;
 }
 
-.fade-in {
-  animation: fade-in 1s forwards
+. {
+  animation:  1s forwards
 }
 
-@keyframes fade-in-left {
+@keyframes -left {
   0% {
     opacity: 0;
     transform: translateX(-100%);
@@ -465,7 +465,7 @@ footer h6 {
     transform: translateX(0);
   }
 }
-@keyframes fade-in {
+@keyframes  {
   0% {
     opacity: 0;
   }

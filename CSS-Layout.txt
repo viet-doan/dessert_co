@@ -47,7 +47,7 @@
 .wrapper2
 .hero-cover
 .overlay-slogan
-.main-img fade-in
+.main-img 
 
 *ABOUT*
 .row
@@ -70,8 +70,8 @@ footer
 
 
 ** ANIMATIONS **
-.fade-in
-@keyframes fade-in
+.
+@keyframes 
 
 
 

@@ -451,8 +451,8 @@ footer h6 {
 }
 
 /* Animations */
-.fade-in {
-  animation: fade-in 1s forwards
+/* .fade-in {
+  animation:  1s forwards
 }
 @keyframes fade-in {
   0% {
@@ -461,7 +461,7 @@ footer h6 {
   100% {
     opacity: 1;
   }
-}
+} */
 
 /* Contact Form */
 .container {
