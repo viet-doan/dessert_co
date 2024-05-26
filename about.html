@@ -161,34 +161,50 @@
     </div>
   </footer>
 
-  <!-- Collapsable Side Nav Bar for Responsive Design -->
+<!-- Collapsable Side Nav Bar for Responsive Design -->
+<script>
+  let menu_icon_box = document.querySelector(".menu_icon_box");
+  let box = document.querySelector(".top-nav");
+
+
+    menu_icon_box.onclick = function(){
+      menu_icon_box.classList.toggle("active");
+      box.classList.toggle("active-top-nav");
+  }
+</script>
+
+  <!-- Hide header on scrolls -->
   <script>
-    let menu_icon_box = document.querySelector(".menu_icon_box");
-    let box = document.querySelector(".top-nav");
-
-
-      menu_icon_box.onclick = function(){
-        menu_icon_box.classList.toggle("active");
-        box.classList.toggle("active-top-nav");
-    }
-  </script>
-
-  <!-- Hide Header on Scroll -->
-  <script>
+    // the previous scrolling Y offset
     var prevScrollpos = window.pageYOffset;
+    var scrolledAmount = 0;
     window.onscroll = function() {
+
+    // the current scrolling Y offset
     var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.querySelector(".main-header").style.top = "0";
-      } else {
-        document.querySelector(".main-header").style.top = "-400px"; 
+    
+      // Increase scrolled Amount if the page has been scrolled up
+      if (prevScrollpos > currentScrollPos ) {
+        scrolledAmount = prevScrollpos - currentScrollPos
+      } 
+
+      // Hide the header if the page has been scrolled down
+      else {
+        document.querySelector(".main-header").style.top ="-400px"; 
         menu_icon_box.classList.remove("active");
         box.classList.remove("active-top-nav");
+        prevScrollpos = currentScrollPos;
       }
-      prevScrollpos = currentScrollPos;
+
+      // Show the header if the page has been scrolled up 30vh
+      if (scrolledAmount > window.innerHeight * 0.3) {
+        document.querySelector(".main-header").style.top = "0";
+        prevScrollpos = currentScrollPos;
+      }
     }
   </script>
 
+  <!-- Set Banner Height -->
   <script>
     const split70 = document.querySelector('.split70');
     const split30 = document.querySelector('.split30');
