@@ -231,6 +231,7 @@ h1 {font-size: 100px;}
   width: 80vw;
   flex-direction: column;
   margin: auto;
+  margin-top: 40px;
   align-items: center;
   justify-content: center;
 }
@@ -238,7 +239,8 @@ h1 {font-size: 100px;}
 /* index */
 .wrapper1, .wrapper2{
   width: 100vw;
-  margin: 40px 0;
+  margin:0;
+  margin-bottom: 40px;
 }
 .wrapper2 {
   background-color: #D8D8D8;
@@ -285,7 +287,7 @@ h1 {font-size: 100px;}
   width: 80vw;
   height:100%;
   display: flex;
-  margin: 40px auto;
+  margin: 0 auto;
   flex-direction: row;
   gap: 40px;
 }
@@ -304,7 +306,7 @@ h1 {font-size: 100px;}
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   align-items: center;
 }
 .split50 {width: 50%;}
@@ -320,8 +322,19 @@ h1 {font-size: 100px;}
   object-position: center;
   width: 100%;
 }
+#about .row {
+  width: 100%;
+  margin: 0;
+}
+#about .column {
+  margin-bottom: 40px;
+}
 
 /* products */
+#products .row {
+  width: 100%;
+  margin-top: 0 !important;
+}
 .menu-grid {
   display: flex;
   flex-wrap: wrap;
@@ -332,6 +345,7 @@ h1 {font-size: 100px;}
   margin-bottom: 40px;
 }
 .menu-item {
+  background: #E2E2E2;
   display: flex;
   flex-direction: column;
   width: 18vw;
@@ -340,18 +354,13 @@ h1 {font-size: 100px;}
   margin: 20px auto !important;
 }
 
-
-
-/* ========== */
-/* ================*/
-/* ======================== */
-/* ==============================*/
-/* ==================================*/
-/* ====================================== */
-
 /* stores */
+#stores .row {
+  width: 100%;
+  margin: 0;
+}
 #stores .column{
-  margin-top: 0;
+  margin: 40px 0;
   gap: 0;
 }
 .stores-container1 {
@@ -372,6 +381,16 @@ h1 {font-size: 100px;}
 p.open-hours{
   margin-top: 20px !important;
 }
+
+/* ========== */
+/* ================*/
+/* ======================== */
+/* ==============================*/
+/* ==================================*/
+/* ====================================== */
+
+/* contact us */
+
 
 /* ====================================== */
 /* =================================*/
