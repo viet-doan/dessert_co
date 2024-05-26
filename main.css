@@ -382,23 +382,10 @@ p.open-hours{
   margin-top: 20px !important;
 }
 
-/* ========== */
-/* ================*/
-/* ======================== */
-/* ==============================*/
-/* ==================================*/
-/* ====================================== */
-
 /* contact us */
-
-
-/* ====================================== */
-/* =================================*/
-/* ===========================*/
-/* =================== */
-/* =========== */
-/* ===== */
-
+#contact .row {
+  margin-top: 0;
+}
 
 /* Footer */
 footer {
@@ -472,20 +459,12 @@ footer h6 {
   width: 80%;
 }
 
-/* Animations */
-/* .fade-in {
-  animation:  1s forwards
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-
 /* Contact Form */
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .container {
   margin: 1em;
   margin-bottom: 0;
@@ -495,12 +474,14 @@ footer h6 {
 .form-label {
   font-weight: bold;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .form-control {
   width: 100%;
   padding: 10px;
-  margin-top: 1em;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -521,7 +502,6 @@ textarea {
   border-radius: 16px;
   border: solid 1px #a1a1a1;
   cursor: pointer;
-  margin-top: 1em;
 }
 
 .btn:hover {
