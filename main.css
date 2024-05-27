@@ -153,7 +153,7 @@ h1 {font-size: 100px;}
   opacity: 0.4;
 }
 .nav-divider2{
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
 /* Responsive Header */
