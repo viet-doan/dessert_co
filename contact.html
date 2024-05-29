@@ -77,31 +77,29 @@
   <div id="contact" class="main-container">
     <div class="row">
       <h2>Contact Us</h2>
-      <p>Get in touch with us at Dessert Co! Whether you have a question about our products, would like to place a custom order, or simply want to share your sweet experience with us, we'd love to hear from you. You can reach us by phone at 0123 444 8888, or by email at info@dessertco.com.au. Alternatively, you can fill out the form below and we'll get back to you within 24 hours. We're also active on social media, so feel free to reach out to us on Facebook, Instagram, or Twitter. We can't wait to connect with you and satisfy your sweet tooth!</p>
+      <p class="justify">Get in touch with us at Dessert Co! Whether you have a question about our products, would like to place a custom order, or simply want to share your sweet experience with us, we'd love to hear from you. You can reach us by phone at 0123 444 8888, or by email at info@dessertco.com.au. Alternatively, you can fill out the form below and we'll get back to you within 24 hours. We're also active on social media, so feel free to reach out to us on Facebook, Instagram, or Twitter. We can't wait to connect with you and satisfy your sweet tooth!</p>
       <!-- <h2>[contact.title]</h2>
       <p>[contact.contactUs]</p> -->
     </div>
 
     <!-- Contact Form -->
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <form id="contactForm">
-          <div class="mb-3">
-            <label for="name" class="form-label"><h4>Name<h4></label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label"><h4>Email<h4></label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label"><h4>Message<h4></label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+    <form id="contactForm">
+      <div class="form-section">
+        <!-- <label for="name" class="form-label"><h4>Name<h4></label> -->
+        <input type="text" class="form-control" id="name" placeholder="Enter name...">
       </div>
-    </div>
+      <div class="form-section">
+        <!-- <label for="email" class="form-label"><h4>Email<h4></label> -->
+        <input type="email" class="form-control" id="email" placeholder="Enter email...">
+      </div>
+      <div class="form-section">
+        <!-- <label for="message" class="form-label"><h4>Message<h4></label> -->
+        <textarea class="form-control" id="message" rows="5" placeholder="Enter message..."></textarea>
+      </div>
+      <div class="form-section">
+        <button type="submit" class="general-btn">Submit</button>
+      </div>
+    </form>
   </div>
 
   <footer>
@@ -197,6 +195,50 @@
       }
     }
   </script>
+
+<!-- Processing Contact Form -->
+<script>
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const loadingOverlay = document.querySelector(".loading-overlay");
+    loadingOverlay.style.display = "block";
+
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+
+    try {
+      const result = await submitContact(nameInput.value, emailInput.value, messageInput.value);
+      console.log(result);
+      const loadingOverlay = document.querySelector(".loading-overlay");
+      loadingOverlay.style.display = "none";
+      Swal.fire({
+          title: "",
+          text: "Message Sent Successfully!",
+          icon: "success"
+      });
+
+      nameInput.value = "";
+      emailInput.value = "";
+      messageInput.value = "";
+    } catch (error) {
+      console.error(error);
+      alert(error);
+      const loadingOverlay = document.querySelector(".loading-overlay");
+      loadingOverlay.style.display = "none";
+      Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Oops, something went wrong! You could contact me via \n vietdoan.vqd@gmail.com",
+          footer: ''
+      });
+    }
+    });
+  }
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
