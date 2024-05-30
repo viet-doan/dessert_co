@@ -105,10 +105,10 @@
         </div> -->
       </div>
 
-      <div class="split30" id="scrollbar">
-        <img loading="lazy"  src="assets/kitchen1.jpg">
-        <img loading="lazy"  src="assets/events1.jpg">
-        <img loading="lazy"  src="assets/kitchen3.jpg">
+      <div class="split30">
+        <img class="banner1" loading="lazy"  src="assets/kitchen1.jpg">
+        <img class="banner2" loading="lazy"  src="assets/events1.jpg">
+        <img class="banner3" loading="lazy"  src="assets/kitchen3.jpg">
         <!-- <img loading="lazy" src="[banner1]">
         <img loading="lazy" src="[banner2]">
         <img loading="lazy" src="[banner3]"> -->
@@ -214,10 +214,16 @@
   <script>
     const split70 = document.querySelector('.split70');
     const split30 = document.querySelector('.split30');
+    const banner1 = document.querySelector('.banner1');
+    const banner2 = document.querySelector('.banner2');
+    const banner3 = document.querySelector('.banner3');
 
     function resizeImage() {
       if (window.matchMedia('(min-width: 850px)').matches) {
         split30.style.height = `${split70.offsetHeight}px`;
+        banner1.style.height = `${split30.offsetHeight/3}px`;
+        banner2.style.height = `${split30.offsetHeight/3}px`;
+        banner3.style.height = `${split30.offsetHeight/3}px`;
       } else {
         split30.style.height = `fit-content`
       }

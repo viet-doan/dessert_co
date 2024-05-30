@@ -94,23 +94,6 @@ h1 {font-size: 100px;}
   cursor: pointer;
 }
 
-/* Scrollbar */
-#scrollbar::-webkit-scrollbar {
-  width: 12px;
-}
-#scrollbar::-webkit-scrollbar-track {
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  background-color: #e7e7e7;
-  border: 1px solid #cacaca;
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
-}
-#scrollbar::-webkit-scrollbar-thumb {
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  background-color: #444;
-}
-
 /* Logo */
 .logo-container {
   position: relative;
@@ -227,19 +210,16 @@ h1 {font-size: 100px;}
 .top-nav{
   width: 100vw;
   background-color: #fff;
-  /* position: relative; */
   text-align: center;
   z-index: 1;
   transition: 0.3s;
   opacity: 0;
   pointer-events: none;
-
 }
 .active-top-nav{
   opacity: 1;
   border-bottom: 1px solid #000;
   pointer-events: fill;
-  
 }
 
 /* Main Body */
@@ -293,6 +273,13 @@ h1 {font-size: 100px;}
 }
 
 /* about */
+#about .row {
+  width: 100%;
+  margin: 0;
+}
+#about .column {
+  margin-bottom: 40px;
+}
 .row {
   width: 80vw;
   display: flex;
@@ -332,21 +319,16 @@ h1 {font-size: 100px;}
 .split30 {
   width: 30%;
   gap: 0px;
-  overflow: scroll;
-  overflow-x: hidden;
 }
-.split30 img {
+.banner1,
+.banner2,
+.banner3 {
   object-fit: cover;
-  object-position: center;
-  width: 100%;
+  object-position: center center;
+  width:100%;
+  height: 100%;
 }
-#about .row {
-  width: 100%;
-  margin: 0;
-}
-#about .column {
-  margin-bottom: 40px;
-}
+
 
 /* products */
 #products .row {
