@@ -74,7 +74,6 @@ h1 {font-size: 100px;}
   height: 50px;
   background: none;
   border: solid 1px rgba(120,120,120);
-
   text-decoration: none;
   color: #444;
   font-size: 16px;
@@ -130,7 +129,6 @@ h1 {font-size: 100px;}
 .nav-bar {
   position: relative;
   display: block;
-  position: -webkit-sticky;
 }
 .nav-item{
   color: #1a1a1a;
@@ -158,6 +156,43 @@ h1 {font-size: 100px;}
 }
 
 /* Responsive Header */
+.mini-nav {
+  width: 100vw;
+  height: 70px;
+  background: #fff;
+  display: flex;
+  margin: 0;
+}
+.mini-nav h4{
+  align-self: center;
+  position: absolute;
+  left: 10%;
+}
+.menu_icon_box{
+  width: fit-content;
+  height: 20px; 
+  cursor: pointer;
+  display: none;
+
+  align-self: center;
+  position: absolute;
+  right: 10%;
+}
+.menu_icon_box:active {
+  background-color: #e1e1e1;
+}
+  .line1 , .line2 , .line3{
+    width: 30px;
+    height: 3px;
+    margin-bottom: 6px;
+    background-color: #444;
+    transition: 0.2s;
+  }
+.mini-nav-divider{
+  border: 1px solid rgb(153, 153, 153);
+  width: 100vw;
+  margin: 0;
+}
 .collapse-menu{
   position: absolute;
   height: fit-content;
@@ -165,8 +200,6 @@ h1 {font-size: 100px;}
 .collapse-nav{
   background: #fff;
   width: 100vw;
-  border-top: 1px solid #000;
-  margin-top: 115px;
   padding: 20px 0;
   display: flex;
   align-items: center;
@@ -176,8 +209,8 @@ h1 {font-size: 100px;}
 .collapse-nav .nav-item{
   position:relative;
   text-align: center;
-  width: 50%;
-  padding: 0.5em 1em;
+  width: 180px;
+  padding: 0.5em 0;
 }
 .collapse-nav .active{
   background-color: #e1e1e1;
@@ -186,27 +219,6 @@ h1 {font-size: 100px;}
   background-color: #e1e1e1;
   text-decoration: none;
 }
-.menu_icon_box{
-  z-index: 2;
-  width: fit-content;
-  height: 20px; 
-  top: 50px;
-  right: 5vw;
-  padding: 8px;
-  position: absolute;
-  cursor: pointer;
-  display: none;
-}
-.menu_icon_box:active {
-  background-color: #e1e1e1;
-}
-  .line1 , .line2 , .line3{
-    width: 30px;
-    height: 3px;
-    margin-bottom: 6px;
-    background-color: #000;
-    transition: 0.2s;
-  }
 .top-nav{
   width: 100vw;
   background-color: #fff;
@@ -218,7 +230,7 @@ h1 {font-size: 100px;}
 }
 .active-top-nav{
   opacity: 1;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #444;
   pointer-events: fill;
 }
 
@@ -250,7 +262,6 @@ h1 {font-size: 100px;}
   height: 40vw;
   background-color: #000;
   position: relative;
-  /* justify-content: center; */
 }
 
 .overlay-slogan{
@@ -324,11 +335,10 @@ h1 {font-size: 100px;}
 .banner2,
 .banner3 {
   object-fit: cover;
-  object-position: center center;
+  object-position: 50% 60%;
   width:100%;
   height: 100%;
 }
-
 
 /* products */
 #products .row {
@@ -540,14 +550,17 @@ textarea {
 
 @media screen and (max-width: 850px) {
   /* Header */
-  .nav-bar {
+  .nav-bar,
+  .nav-divider,
+  .nav-divider2 {
     display:none;
   }
   .logo-container,
   .top-logo {
-    height: 100px;
+    display: none;
   }
   .main-header{
+    height: 70px;
     flex-direction: row;
     border-bottom: 1px solid #000;
   }
