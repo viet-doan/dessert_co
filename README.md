@@ -1,6 +1,4 @@
-![image](https://github.com/viet-doan/dessert_co/assets/136438459/e400975e-2047-4991-a6b0-d747481e88b9)# Dessert Co - Website Template
-
-**Dessert Co**
+**Dessert Co - Website Template**
 
 Across my internship with a startup, QuickSite, a platform for instant website creation, standing out in the
 technology market as a pioneer in AI-driven web solutions. One of the task as an intern was to create a 
