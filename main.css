@@ -275,13 +275,20 @@ h1 {font-size: 100px;}
   height: 40vw;
   background-color: #000;
   position: relative;
+  align-items: center;
 }
 .overlay-slogan{
   position: absolute;
   text-align: left;
-  top: 20%;
-  left: 2%;
+  align-self: center;
+  /* top: 20%; */
+  left: 20px;
+  margin: auto auto;
   z-index: 2;
+}
+.outer-slogan {
+  display: none;
+  width: 80vw;
 }
 .hero-cover h1 {
   text-align: left !important;
@@ -601,7 +608,7 @@ textarea {
   }
   .menu_icon_box{ 
     display: block;
-  }  
+  }
 
   /* Main */
   .column {
@@ -669,6 +676,24 @@ textarea {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .overlay-slogan p,
+  .overlay-slogan button{
+    display: none;
+  }
+  .overlay-slogan {
+    align-self: flex-end;
+  }
+  .outer-slogan {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -680,3 +705,6 @@ textarea {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+
+
