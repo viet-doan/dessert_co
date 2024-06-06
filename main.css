@@ -281,8 +281,8 @@ h1 {font-size: 100px;}
   position: absolute;
   text-align: left;
   align-self: center;
-  /* top: 20%; */
   left: 20px;
+  bottom: 20px;
   margin: auto auto;
   z-index: 2;
 }
@@ -296,10 +296,10 @@ h1 {font-size: 100px;}
   font-weight: 800;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 0;
+  margin-bottom: 10px !important;
 }
 .hero-cover p {
-  width: 50%;
+  width: 60%;
   text-align: left !important;
   font-family: 'Times New Roman', Times, serif;
   /* color: #ebebeb; */ /* EDIT */
@@ -610,6 +610,24 @@ textarea {
   }
 
   /* Main */
+  .overlay-slogan p,
+  .overlay-slogan button{
+    display: none;
+  }
+  .overlay-slogan {
+    align-self: flex-end;
+  }
+  .overlay-slogan h1 {
+    margin-bottom: 0 !important;
+  }
+  .outer-slogan {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+    gap: 20px;
+  }
   .column {
     flex-direction: column;
   }
@@ -672,24 +690,6 @@ textarea {
   }
   .line-spacer {
     display: none;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .overlay-slogan p,
-  .overlay-slogan button{
-    display: none;
-  }
-  .overlay-slogan {
-    align-self: flex-end;
-  }
-  .outer-slogan {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 20px;
-    align-items: center;
-    gap: 20px;
   }
 }
 
