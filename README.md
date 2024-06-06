@@ -11,7 +11,7 @@ The template design was required to meet the following criteria:
 3. Use latest CSS responsive design (don't care about backward compatibility)
 
 **Website**
-Link: [Dessert Co Template]([https://koicorner.art/](http://anai-9atmfta1xwyli1hklmwd.s3-website-ap-southeast-2.amazonaws.com/index.html))
+Link: [Dessert Co Template](http://anai-9atmfta1xwyli1hklmwd.s3-website-ap-southeast-2.amazonaws.com/)
 
 The design of the template follow an antique style that is similar to the design of newspaper. The template
 applies for a dessert store in which the content can be altered and reuse for any other types of restaurants
