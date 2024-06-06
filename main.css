@@ -12,10 +12,11 @@
 
 html, body {
   margin: 0;
+  overflow-x: none;
 }
 
 html {
-  overflow-x: hidden;
+  overflow-x: none;
 }
 
 body {
@@ -74,6 +75,13 @@ h1 {font-size: 100px;}
   height: 50px;
   background: none;
   border: solid 1px rgba(120,120,120);
+
+  text-decoration: none;
+  color: #444;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Aboreto";
 }
 .general-btn a{
   text-decoration: none;
