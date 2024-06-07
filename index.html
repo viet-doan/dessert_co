@@ -190,7 +190,8 @@
 
       // Hide the header if the page has been scrolled down
       else {
-        document.querySelector(".main-header").style.top ="-400px"; 
+        document.querySelector(".main-header").style.top ="-400px";
+        document.querySelector(".nav-divider2").style.marginBottom ="0"; 
         menu_icon_box.classList.remove("active");
         box.classList.remove("active-top-nav");
         prevScrollpos = currentScrollPos;
@@ -199,6 +200,7 @@
       // Show the header if the page has been scrolled up 30vh
       if (scrolledAmount > window.innerHeight * 0.3) {
         document.querySelector(".main-header").style.top = "0";
+        document.querySelector(".nav-divider2").style.marginBottom ="6px"; 
         prevScrollpos = currentScrollPos;
       }
     }
