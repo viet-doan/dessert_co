@@ -12,11 +12,11 @@
 
 html, body {
   margin: 0;
-  overflow-x: none;
+  overflow-x: hidden;
 }
 
-html {
-  overflow-x: none;
+html {  
+  overflow-x: hidden;
 }
 
 body {
@@ -116,16 +116,18 @@ h1 {font-size: 100px;}
 
 /* Logo */
 .logo-container {
-  position: relative;
   height: 120px;
   margin: 0 auto;
   margin-top: 1em;
 }
-.top-logo {
+.logo-container2 {
+  height: 120px;
+  margin: auto;
+}
+.main-logo {
   height: 120px;
   margin: auto;
   margin-bottom: 0px;
-  opacity: 0.7;
 }
 
 /* Headers */
@@ -183,6 +185,12 @@ h1 {font-size: 100px;}
   background: #fff;
   display: flex;
   margin: 0;
+}
+.mini-nav img {
+  align-self: center;
+  position: absolute;
+  left: 10%;
+  height: 60px;
 }
 .mini-nav h4{
   align-self: center;
@@ -310,7 +318,6 @@ h1 {font-size: 100px;}
   width: 60%;
   text-align: left !important;
   font-family: 'Times New Roman', Times, serif;
-  /* color: #ebebeb; */ /* EDIT */
   color: #fff;
   margin-bottom: 20px !important;
 }
@@ -618,22 +625,36 @@ textarea {
   }
 
   /* Main */
-  .overlay-slogan p,
-  .overlay-slogan button{
-    display: none;
+  #index.main-container {
+    margin-top: 0;
   }
-  .overlay-slogan {
-    align-self: flex-end;
+  .hero-cover {
+    height: calc(100vh - 70px);
+    width: 100vw;
   }
-  .overlay-slogan h1 {
+  .hero-cover h1 {
+    font-size: 40px !important;
     margin-bottom: 0 !important;
   }
-  .outer-slogan {
+  .hero-cover p {
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
+  .hero-cover img {
+    object-fit: cover;
+    object-position: center center;
+  }
+  .hero {
+    margin-bottom: 0 !important;
+  }
+  .overlay-slogan {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    margin-top: 20px;
-    align-items: center;
+    width: 80vw;
+    left: 10vw;
+    bottom: 40px;
+    margin: 0 auto;
+    align-self: flex-end;
     gap: 20px;
   }
   .column {
@@ -677,7 +698,7 @@ textarea {
     width: 80vw;
   }
   .footer-container2 {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .footer-main {
     display: flex;
